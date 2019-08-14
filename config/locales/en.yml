@@ -1,2 +1,8 @@
 en:
-  title: "Football Bet"
+  title_website: "Football Bet"
+  login: "Login"
+  signup: "Signup"
+  submit: "Submit"
+  search: "Search"
+  home: "Home"
+  footer_text: "@Football Bet"

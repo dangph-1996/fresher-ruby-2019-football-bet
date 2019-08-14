@@ -1,0 +1,58 @@
+<header class="header-area">
+  <div class="top-header-area">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="top-header-content d-flex align-items-center justify-content-between">
+            <div class="logo">
+              <h1 class="title-logo">
+                <%= link_to t("tittle_website"), root_path %>
+              </h1>
+            </div>
+            <div class="login-search-area d-flex align-items-center">
+              <div class="login d-flex">
+                <a href="#">
+                <%= t"login" %>
+                </a>
+                <a href="#">
+                <%= t"signup" %>
+                </a>
+              </div>
+              <div class="search-form">
+                <form action="#" method="#">
+                  <input type="search" name="search" class="form-control" placeholder="<%= t"search" %>">
+                  <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="newspaper-main-menu" id="stickyMenu">
+    <div class="classy-nav-container breakpoint-off">
+      <div class="container">
+        <nav class="classy-navbar justify-content-between" id="newspaperNav">
+          <div class="logo">
+            <a href="#"></a>
+          </div>
+          <div class="classy-menu">
+            <div class="classycloseIcon">
+              <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+            </div>
+            <div class="classynav">
+              <ul>
+                <li class="active">
+                  <a href="#">
+                  <%= t"home" %>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
