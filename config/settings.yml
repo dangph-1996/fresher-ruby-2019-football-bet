@@ -1,0 +1,3 @@
+omniauth:
+  facebook: "facebook"
+  google_oauth: "google_oauth2"
