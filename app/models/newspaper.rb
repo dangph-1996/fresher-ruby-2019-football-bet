@@ -16,4 +16,6 @@ class Newspaper < ApplicationRecord
   scope :ordered_by_newspaper_id, -> {order id: :desc}
   scope :by_status_hot, -> {where status: :hot}
   scope :by_status_normal, -> {where status: :normal}
+  scope :get_new_by_category_ids, ->(category_ids){where category_id: category_ids}
+  scope :limit_show_newspapers, -> {order(id: :asc).limit Settings.limit_news_category_home}
 end

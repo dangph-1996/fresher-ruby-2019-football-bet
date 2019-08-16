@@ -2158,7 +2158,7 @@ a {
 
 .cm_nspp {
   padding: 5px;
-  border-bottom: 1px solid #e4e6e8;
+  border-bottom: 1px solid $while_color5;
   display: -webkit-box;
 }
 
@@ -2201,7 +2201,6 @@ a {
 // .red{
 //   color: $red_color1;
 // }
-
 // .green{
 //   color: $green_color;
 // }
@@ -2218,4 +2217,25 @@ a {
 .btn-submit-comment{
   padding-bottom: 20px;
   text-align: right
+}
+
+.post-title h6 {
+  font-size: 17px !important;
+  color: $black_color7;
+}
+
+.post-thumb-category img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover
+}
+
+.news-category h6 {
+  color: $black_color7;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.news-category .post-date a {
+  color: $black_color5;
 }
