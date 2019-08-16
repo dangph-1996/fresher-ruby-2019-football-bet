@@ -1,3 +1,5 @@
 class Category < ApplicationRecord
-  has_many :news, dependent: :destroy
+  CATEGORY_PARAMS = %i(name).freeze
+
+  has_many :new, dependent: :destroy
 end

@@ -6,7 +6,7 @@ class CreatePlayers < ActiveRecord::Migration[6.0]
       t.integer :number
       t.string :country
       t.datetime :birthday
-      t.references :football_clubs, foreign_key: true
+      t.references :football_club, foreign_key: true
       
       t.timestamps
     end
