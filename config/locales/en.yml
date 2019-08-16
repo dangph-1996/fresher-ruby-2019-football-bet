@@ -1,4 +1,7 @@
 en:
+  time:
+    formats:
+      date_month_year_concise: '%d-%m-%y'
   title_website: "Football Bet"
   signin: "Signin"
   signup: "Signup"
@@ -52,3 +55,11 @@ en:
   error: "Error"
   success: "Success"
   edituser: "Edit user"
+  categories: "Categories"
+  list_categories: "List Categories"
+  create_categories: "Create categories"
+  created_time: "Created Time"
+  update_time: "Update Time"
+  format_time: "%d-%m-%Y"
+  category_name: "Category Name"
+  edit_category: "Edit Category"
