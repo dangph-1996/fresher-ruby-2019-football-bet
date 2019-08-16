@@ -50,7 +50,7 @@ class Admin::NewspapersController < AdminController
 
   def load_newspaper
     @newspaper = Newspaper.find_by id: params[:id]
-    
+
     return if @newspaper
     flash[:danger] = t "error"
     redirect_to root_path
