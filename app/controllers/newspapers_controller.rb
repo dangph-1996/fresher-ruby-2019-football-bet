@@ -1,10 +1,15 @@
 class NewspapersController < ApplicationController
-  before_action :load_newspaper, except: %i(new create index)
+  before_action :load_newspaper, except: %i(new create index search)
 
   def index; end
 
   def show
     @newspaper_new = Newspaper.take Settings.paging_table
+  end
+
+  def search
+    @newspapers = Newspaper.ransack(params[:q]).result.page(params[:page])
+      .per Settings.paging_table
   end
 
   private

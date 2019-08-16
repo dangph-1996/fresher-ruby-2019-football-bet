@@ -20,6 +20,7 @@ Rails.application.routes.draw do
   get "categories/new"
   mount Ckeditor::Engine => "/ckeditor"
   get "/categories", to: "home#index"
+  get "/search", to:"newspapers#search"
   resources :categories
   resources :newspapers
 end
