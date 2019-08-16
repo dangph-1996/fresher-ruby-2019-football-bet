@@ -13,7 +13,9 @@ Rails.application.routes.draw do
     resources :seasons
     resources :rounds
     resources :football_clubs
+    resources :players
   end
+  get "categories/new"
   mount Ckeditor::Engine => "/ckeditor"
   get "/categories", to: "home#index"
   resources :categories
