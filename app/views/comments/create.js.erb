@@ -1,0 +1,6 @@
+<% if @comment.errors.present? %>
+  alert('<%= t "error" %>');
+<% else %>
+  $('#add_comment').prepend('<%= j render "create", comment: @comment %>');
+  $('#content_comment').val('');
+<% end %>

@@ -4,7 +4,10 @@ class NewspapersController < ApplicationController
   def index; end
 
   def show
-    @newspaper_new = Newspaper.take Settings.paging_table
+    @newspaper_new = Newspaper.includes(:comments).take Settings.paging_table
+    @comment = Comment.new
+    @comments = @newspaper.comments.order_comment_by_id
+      .take Settings.paging_table_comment
   end
 
   def search
