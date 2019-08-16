@@ -2,6 +2,7 @@ en:
   time:
     formats:
       date_month_year_concise: '%d-%m-%y'
+      format_time_hours: '%H:%M %d/%y'
   title_website: "Football Bet"
   signin: "Signin"
   signup: "Signup"
@@ -117,3 +118,9 @@ en:
   comment_newspapers: "Your commemnt"
   sign_in_to_comment: "Please signin to comment"
   no_comment: "No Comment"
+  category_newspaper: "News Category"
+  fixtures: "Fixtures"
+  time_title: "Time"
+  choose_season: "Choose season"
+  choose_round: "Choose round"
+  choose_league: "Choose league"

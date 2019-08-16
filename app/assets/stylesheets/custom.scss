@@ -2163,8 +2163,45 @@ a {
 }
 
 .cm_nspp img.mw{
-  margin-right: 10px; 
+  margin-right: 10px;
 }
-.text_aria_comment textarea{
+
+.text_aria_comment textarea {
   height: 80px;
 }
+
+.title_newspaper {
+  width: 100%;
+  padding-top: 10px
+}
+
+.select_fixtures {
+  width: 100%;
+}
+
+.pixtures {
+  height: 50px;
+  background: $while_color1;
+  border: 1px solid $while_color2;
+  border-radius: 5px;
+}
+
+.hero-area.view_list_fixture {
+  height: inherit;
+}
+
+#match-list table{
+  color: $black_color7
+}
+
+#match-list table tbody th{
+  font-weight: inherit;
+}
+
+// .red{
+//   color: $red_color1;
+// }
+
+// .green{
+//   color: $green_color;
+// }
