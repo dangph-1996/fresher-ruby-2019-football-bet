@@ -984,7 +984,7 @@ textarea:focus {
 }
 
 .single-blog-post.small-featured-post .post-data .post-title h6 {
-  font-size: 14px;
+  font-size: 14px !important;
   line-height: 1.6;
   margin-bottom: 10px;
   font-weight: 700;
@@ -2149,4 +2149,9 @@ a {
 
 #wrapper #content-wrapper {
   overflow: hidden !important
+}
+
+.news_normal img{
+  height: auto;
+  max-width: 100px;
 }
