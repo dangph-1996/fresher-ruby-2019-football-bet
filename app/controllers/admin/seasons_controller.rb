@@ -12,6 +12,10 @@ class Admin::SeasonsController < AdminController
   def create
     @season = Season.new season_params
 
+    params[:season][:football_clubs].each do |football_club_id|
+      @season.rankings.build(football_club_id: football_club_id)
+    end
+
     if @season.save
       flash[:success] = t("success")
       redirect_to admin_seasons_path

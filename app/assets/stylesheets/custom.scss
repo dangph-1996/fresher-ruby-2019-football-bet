@@ -2093,16 +2093,21 @@ iframe {
 .back-text {
   color: $black_color7 !important;
 }
-img.mw{
+
+img.mw {
   height: 50px;
   width: 50px
 }
+
 .classynav ul li a {
   line-height: 34px !important;
 }
-.classynav ul li.has-down > a::after, .classynav ul li.megamenu-item > a::after{
+
+.classynav ul li.has-down>a::after,
+.classynav ul li.megamenu-item>a::after {
   display: none
 }
+
 .post-thumb img {
   height: 300px;
   width: 100%;

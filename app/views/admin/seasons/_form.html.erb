@@ -15,6 +15,11 @@
     <%= f.date_select :finish_time %>
   </div>
 
+  <% FootballClub.all.each do |football_club| %>
+    <%= f.check_box :football_clubs, {multiple: true}, football_club.id, false %>
+    <%= f.label football_club.name %><br>
+    <% end %>
+
   <%= button_tag t("submit"), type: "submit", class: "btn btn-primary" %>
   <%= button_tag t("reset"), type: "reset", class: "btn btn-default" %>
 <% end %>
