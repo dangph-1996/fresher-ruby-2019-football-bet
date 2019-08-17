@@ -11,6 +11,7 @@ Rails.application.routes.draw do
     resources :newspapers
     resources :leagues
     resources :seasons
+    resources :rounds
   end
   mount Ckeditor::Engine => "/ckeditor"
   get "/categories", to: "home#index"
