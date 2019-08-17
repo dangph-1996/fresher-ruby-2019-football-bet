@@ -166,7 +166,7 @@ ActiveRecord::Schema.define(version: 2019_08_19_074200) do
   add_foreign_key "comments", "newspapers"
   add_foreign_key "comments", "users"
   add_foreign_key "matches", "rounds"
-  add_foreign_key "news", "categories"
+  add_foreign_key "newspapers", "categories"
   add_foreign_key "players", "football_clubs"
   add_foreign_key "rankings", "football_clubs"
   add_foreign_key "rankings", "seasons"
