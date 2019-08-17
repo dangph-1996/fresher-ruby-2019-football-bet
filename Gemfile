@@ -25,6 +25,7 @@ gem "bootstrap4-kaminari-views"
 gem "font-awesome-rails"
 gem "ffaker"
 gem "ckeditor", "4.1.3"
+gem "bootstrap-datepicker-rails", ">= 0.6.21"
 
 group :development, :test do
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
