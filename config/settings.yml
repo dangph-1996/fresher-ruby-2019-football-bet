@@ -1,3 +1,6 @@
 omniauth:
   facebook: "facebook"
   google_oauth: "google_oauth2"
+start_stt: 1
+end_stt: 10
+paging_table: 10
