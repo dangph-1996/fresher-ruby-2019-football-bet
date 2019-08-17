@@ -4,3 +4,7 @@ omniauth:
 start_stt: 1
 end_stt: 10
 paging_table: 10
+paging_table_new: 5
+paging_table_new: 5
+start_char: 0
+end_char: 150

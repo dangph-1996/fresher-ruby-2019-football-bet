@@ -12,4 +12,7 @@ class Newspaper < ApplicationRecord
   validates :description, presence: true
 
   delegate :name, to: :category, prefix: true
+
+  scope :ordered_by_newspaper_id, -> {order(id: :desc)}
+  scope :by_status_hot, -> { where(status: 1) }
 end

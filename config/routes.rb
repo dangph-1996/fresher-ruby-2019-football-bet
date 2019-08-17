@@ -12,5 +12,7 @@ Rails.application.routes.draw do
     resources :newspapers
   end
   mount Ckeditor::Engine => '/ckeditor'
-  get "/newspaper", to:"newspapers#show"
+  get "/categories", to: "home#index"
+  resources :categories
+  resources :newspapers
 end

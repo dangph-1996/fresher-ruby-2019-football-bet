@@ -1,1 +1,36 @@
-<%# home_index %>
+<div class="popular-news-area section-padding-80-50">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-8">
+        <div class="section-heading">
+          <h6><%= t "new_News"%></h6>
+        </div>
+        <div class="row">
+          <% @newspaper_hots.each do |newspaper_hot| %>
+            <div class="col-12 col-md-6">
+              <div class="single-blog-post style-3">
+                <div class="post-thumb">
+                  <%= link_to newspaper_path(newspaper_hot) do %>
+                     <%= image_tag "#{newspaper_hot.image}" , alt: "avatar" %>
+                  <% end %>  
+                  </a>
+                </div>
+                <div class="post-data">
+                  <%= link_to newspaper_path(newspaper_hot) do %>
+                     <h6><%= newspaper_hot.title %></h6>
+                  <% end %>
+                  <p><%= raw( newspaper_hot.description.slice(Settings.start_char..Settings.end_char)) %></p>
+                </div>
+              </div>
+            </div>
+          <% end %>
+        </div>
+      </div>
+      <div class="col-12 col-lg-4">
+        <div class="section-heading">
+          <h6><%= t "related_news"%></h6>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
