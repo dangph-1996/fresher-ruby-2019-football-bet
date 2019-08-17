@@ -11,7 +11,7 @@ class Admin::LeaguesController < AdminController
 
   def create
     @league = League.new league_params
-
+    
     if @league.save
       flash[:success] = t("success")
       redirect_to admin_leagues_path

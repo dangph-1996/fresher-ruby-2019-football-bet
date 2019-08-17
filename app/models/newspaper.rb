@@ -15,4 +15,5 @@ class Newspaper < ApplicationRecord
 
   scope :ordered_by_newspaper_id, -> {order(id: :desc)}
   scope :by_status_hot, -> { where(status: 1) }
+
 end
