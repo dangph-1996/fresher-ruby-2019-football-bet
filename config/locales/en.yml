@@ -52,6 +52,7 @@ en:
   error: "Error"
   success: "Success"
   edituser: "Edit user"
+<<<<<<< HEAD
   categories: "Categories"
   list_categories: "List Categories"
   create_categories: "Create categories"
@@ -60,3 +61,6 @@ en:
   format_time: "%d-%m-%Y"
   category_name: "Category Name"
   edit_category: "Edit Category"
+=======
+  
+>>>>>>> Manage User

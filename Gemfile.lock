@@ -392,5 +392,11 @@ DEPENDENCIES
   webdrivers
   webpacker (~> 4.0)
 
+<<<<<<< HEAD
+=======
+RUBY VERSION
+   ruby 2.6.0p0
+
+>>>>>>> Manage User
 BUNDLED WITH
    2.0.2

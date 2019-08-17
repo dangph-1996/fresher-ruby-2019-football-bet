@@ -7,7 +7,11 @@ Rails.application.routes.draw do
   namespace :admin do
     get "index"
     resources :users
+<<<<<<< HEAD
     resources :categories
   end
   get "categories/new"
+=======
+  end
+>>>>>>> Manage User
 end

@@ -1,6 +1,10 @@
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
+<<<<<<< HEAD
+=======
+ruby "2.6.0"
+>>>>>>> Manage User
 gem "rails", "~> 6.0.0.rc2"
 gem "mysql2", ">= 0.4.4"
 gem "puma", "~> 3.11"
@@ -23,7 +27,10 @@ gem "config"
 gem "kaminari"
 gem "bootstrap-kaminari-views"
 gem "font-awesome-rails"
+<<<<<<< HEAD
 gem "faker"
+=======
+>>>>>>> Manage User
 
 group :development, :test do
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
