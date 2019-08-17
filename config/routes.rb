@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  get 'newspapers/new'
   root "home#index"
   devise_for :users,
     controllers:{ omniauth_callbacks:"users/omniauth_callbacks" }
@@ -10,6 +9,7 @@ Rails.application.routes.draw do
     resources :users
     resources :categories
     resources :newspapers
+    resources :leagues
   end
   mount Ckeditor::Engine => '/ckeditor'
   get "/categories", to: "home#index"
