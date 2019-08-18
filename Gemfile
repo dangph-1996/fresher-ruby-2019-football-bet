@@ -2,9 +2,13 @@ source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 ruby "2.6.0"
 >>>>>>> Manage User
+=======
+ruby "2.5.1"
+>>>>>>> Manage News
 gem "rails", "~> 6.0.0.rc2"
 gem "mysql2", ">= 0.4.4"
 gem "puma", "~> 3.11"
@@ -14,7 +18,7 @@ gem "turbolinks", "~> 5"
 gem "jbuilder", "~> 2.7"
 gem "bootsnap", ">= 1.4.2", require: false
 gem "rails-i18n"
-gem "devise"
+gem 'devise', git: 'https://github.com/plataformatec/devise.git', branch: 'master'
 gem "omniauth"
 gem "omniauth-google-oauth2"
 gem "omniauth-facebook"
@@ -34,7 +38,11 @@ gem "faker"
 >>>>>>> Manage User
 =======
 gem "ffaker"
+<<<<<<< HEAD
 >>>>>>> Manage Categories
+=======
+gem "ckeditor", "4.1.3"
+>>>>>>> Manage News
 
 group :development, :test do
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
