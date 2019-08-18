@@ -28,9 +28,13 @@ gem "kaminari"
 gem "bootstrap-kaminari-views"
 gem "font-awesome-rails"
 <<<<<<< HEAD
+<<<<<<< HEAD
 gem "faker"
 =======
 >>>>>>> Manage User
+=======
+gem "ffaker"
+>>>>>>> Manage Categories
 
 group :development, :test do
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]

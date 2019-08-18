@@ -50,7 +50,7 @@ class Admin::CategoriesController < AdminController
 
   def load_category
     @category = Category.find_by id: params[:id]
-
+    
     return if @category
     flash[:danger] = t "error"
     redirect_to root_path

@@ -8,10 +8,16 @@ Rails.application.routes.draw do
     get "index"
     resources :users
 <<<<<<< HEAD
+<<<<<<< HEAD
     resources :categories
   end
   get "categories/new"
 =======
   end
 >>>>>>> Manage User
+=======
+    resources :categories
+  end
+  get "categories/new"
+>>>>>>> Manage Categories
 end

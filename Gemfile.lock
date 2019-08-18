@@ -362,8 +362,11 @@ DEPENDENCIES
   config
   database_cleaner (~> 1.5)
   devise
+<<<<<<< HEAD
   factory_bot_rails
   faker
+=======
+>>>>>>> Manage Categories
   ffaker
   figaro
   font-awesome-rails
