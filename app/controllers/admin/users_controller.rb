@@ -40,6 +40,8 @@ class Admin::UsersController < AdminController
     redirect_to admin_users_path
   end
 
+  private
+
   def user_params
     params.require(:user).permit User::USER_PARAMS
   end

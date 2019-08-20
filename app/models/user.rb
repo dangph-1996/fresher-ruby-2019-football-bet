@@ -10,7 +10,11 @@ class User < ApplicationRecord
   mount_uploader :avatar, ImageUploader
 
   def self.new_with_session params, session
+<<<<<<< HEAD
     tap do |user|
+=======
+    super.tap do |user|
+>>>>>>> Category_view_home
       if data = session["devise.facebook_data"] &&
         session[:devise.facebook_data][:extra][:raw_info]
         user.email = data["email"] if user.email.blank?

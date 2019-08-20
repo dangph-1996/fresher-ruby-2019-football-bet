@@ -1,5 +1,5 @@
 class Newspaper < ApplicationRecord
-  NEWSPAPER_PARAMS = %i(title description image status category_id).freeze
+  NEWSPAPER_PARAMS = %i(title description image status content category_id).freeze
   enum status: {hot: 1, most_new: 2, normal: 0}
 
   has_one_attached :image
@@ -12,4 +12,7 @@ class Newspaper < ApplicationRecord
   validates :description, presence: true
 
   delegate :name, to: :category, prefix: true
+
+  scope :ordered_by_newspaper_id, -> {order(id: :desc)}
+  scope :by_status_hot, -> { where(status: 1) }
 end

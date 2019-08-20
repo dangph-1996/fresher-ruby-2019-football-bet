@@ -29,7 +29,7 @@ gem "carrierwave"
 gem "figaro"
 gem "config"
 gem "kaminari"
-gem "bootstrap-kaminari-views"
+gem "bootstrap4-kaminari-views"
 gem "font-awesome-rails"
 <<<<<<< HEAD
 <<<<<<< HEAD

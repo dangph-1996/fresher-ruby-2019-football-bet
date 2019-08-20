@@ -25,6 +25,12 @@ Rails.application.routes.draw do
 >>>>>>> Manage Categories
 =======
   mount Ckeditor::Engine => '/ckeditor'
+<<<<<<< HEAD
   get "/newspaper", to:"newspapers#show"
 >>>>>>> Manage News
+=======
+  get "/categories", to: "home#index"
+  resources :categories
+  resources :newspapers
+>>>>>>> Category_view_home
 end

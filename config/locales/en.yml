@@ -45,7 +45,7 @@ en:
   stt: "STT"
   avatar: "Avatar"
   action: "Action"
-  theme_paging: "twitter-bootstrap-3"
+  theme_paging: "twitter-bootstrap-4"
   you_sure: "You Sure"
   your_name: "Your name"
   reset: "Reset"
@@ -80,4 +80,12 @@ en:
   news_styles: "News Styles"
   image: "Image"
   edit_newspaper: "Edit Newspaper"
+<<<<<<< HEAD
 >>>>>>> Manage News
+=======
+  category: "Category"
+  category_empty: "Category has not news"
+  new_News: "Newspapers"
+  related_news: "Related News"
+  
+>>>>>>> Category_view_home

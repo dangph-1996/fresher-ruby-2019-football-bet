@@ -1,1 +1,31 @@
-bay dz
+<div class="featured-post-area">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-8">
+        <div class="row">
+          <h2><%= @newspaper.title%></h2>
+          <p> <%= raw @newspaper.content%> </p>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <% @newspaper_new.each do |newspaper| %>
+        <div class="single-blog-post small-featured-post d-flex">
+          <div class="post-thumb newlq">
+            <%= link_to newspaper_path(newspaper) do %>
+            <%= image_tag "#{newspaper.image}" , alt: "avatar" %>
+            <% end %>
+          </div>
+          <div class="post-data">
+            <div class="post-meta">
+              <a href="#" class="post-title newlq">
+                <h6><%= @newspaper.title%></h6>
+              </a>
+              <p class="post-date"><span><%= @newspaper.created_at.strftime(t("format_time")) %></span></p>
+            </div>
+          </div>
+        </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
