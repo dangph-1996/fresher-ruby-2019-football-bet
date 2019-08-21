@@ -87,5 +87,15 @@ en:
   category_empty: "Category has not news"
   new_News: "Newspapers"
   related_news: "Related News"
+<<<<<<< HEAD
   
 >>>>>>> Category_view_home
+=======
+  country: "Country"
+  list_league: "List League"
+  leagues: "Leagues"
+  create_league: "Create League"
+  league: "League"
+  edit_league: "Edit League"  
+  
+>>>>>>> Manage Leagues

@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  get 'newspapers/new'
   root "home#index"
   devise_for :users,
     controllers:{ omniauth_callbacks:"users/omniauth_callbacks" }
@@ -12,6 +11,7 @@ Rails.application.routes.draw do
 <<<<<<< HEAD
     resources :categories
     resources :newspapers
+    resources :leagues
   end
 <<<<<<< HEAD
   get "categories/new"
