@@ -20,3 +20,4 @@ Category.create!(name:  "SeriA",
 	country: country,
 	created_at: Time.zone.now)
 end
+

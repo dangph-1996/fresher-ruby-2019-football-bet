@@ -96,6 +96,15 @@ en:
   leagues: "Leagues"
   create_league: "Create League"
   league: "League"
+<<<<<<< HEAD
   edit_league: "Edit League"  
   
 >>>>>>> Manage Leagues
+=======
+  edit_league: "Edit League"
+  seasons: "Seasons"
+  list_seasons: "List Seasons"
+  create_season: "Create Season"
+  start_time: "Start Time"
+  
+>>>>>>> manage seasons

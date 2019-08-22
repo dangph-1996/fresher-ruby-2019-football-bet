@@ -18,7 +18,7 @@ gem "turbolinks", "~> 5"
 gem "jbuilder", "~> 2.7"
 gem "bootsnap", ">= 1.4.2", require: false
 gem "rails-i18n"
-gem 'devise', git: 'https://github.com/plataformatec/devise.git', branch: 'master'
+gem "devise", git: "https://github.com/plataformatec/devise.git", branch: "master"
 gem "omniauth"
 gem "omniauth-google-oauth2"
 gem "omniauth-facebook"
@@ -42,7 +42,11 @@ gem "ffaker"
 >>>>>>> Manage Categories
 =======
 gem "ckeditor", "4.1.3"
+<<<<<<< HEAD
 >>>>>>> Manage News
+=======
+gem "bootstrap-datepicker-rails", ">= 0.6.21"
+>>>>>>> manage seasons
 
 group :development, :test do
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
