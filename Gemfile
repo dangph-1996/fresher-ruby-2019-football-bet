@@ -1,14 +1,6 @@
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-ruby "2.6.0"
->>>>>>> Manage User
-=======
-ruby "2.5.1"
->>>>>>> Manage News
 gem "rails", "~> 6.0.0.rc2"
 gem "mysql2", ">= 0.4.4"
 gem "puma", "~> 3.11"
@@ -31,22 +23,9 @@ gem "config"
 gem "kaminari"
 gem "bootstrap4-kaminari-views"
 gem "font-awesome-rails"
-<<<<<<< HEAD
-<<<<<<< HEAD
-gem "faker"
-=======
->>>>>>> Manage User
-=======
 gem "ffaker"
-<<<<<<< HEAD
->>>>>>> Manage Categories
-=======
 gem "ckeditor", "4.1.3"
-<<<<<<< HEAD
->>>>>>> Manage News
-=======
 gem "bootstrap-datepicker-rails", ">= 0.6.21"
->>>>>>> manage seasons
 
 group :development, :test do
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]

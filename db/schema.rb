@@ -93,7 +93,6 @@ ActiveRecord::Schema.define(version: 2019_08_19_074200) do
   create_table "newspapers", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
     t.string "title"
     t.text "description"
-    t.text "content"
     t.string "image"
     t.integer "status"
     t.bigint "category_id"
@@ -165,20 +164,11 @@ ActiveRecord::Schema.define(version: 2019_08_19_074200) do
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "comments", "newspapers"
   add_foreign_key "comments", "users"
-<<<<<<< HEAD
   add_foreign_key "matches", "rounds"
-  add_foreign_key "news", "categories"
+  add_foreign_key "newspapers", "categories"
   add_foreign_key "players", "football_clubs"
   add_foreign_key "rankings", "football_clubs"
   add_foreign_key "rankings", "seasons"
   add_foreign_key "rounds", "seasons"
-=======
-  add_foreign_key "matches", "rounds", column: "rounds_id"
-  add_foreign_key "newspapers", "categories"
-  add_foreign_key "players", "football_clubs", column: "football_clubs_id"
-  add_foreign_key "rankings", "football_clubs", column: "football_clubs_id"
-  add_foreign_key "rankings", "seasons", column: "seasons_id"
-  add_foreign_key "rounds", "seasons", column: "seasons_id"
->>>>>>> Manage News
   add_foreign_key "seasons", "leagues"
 end

@@ -26,4 +26,22 @@ namespace :seed_data do
     Category.create!(name: "SeriA",
       created_at: Time.zone.now)
   end
+
+  task categories: :environment do
+    Category.create!(name: "Premier League",
+      created_at: Time.zone.now)
+    
+    Category.create!(name: "SeriA",
+      created_at: Time.zone.now)
+  end
+
+  task leagues: :environment do
+    5.times do |n|
+      name  = "League#{n+1}"
+      country  = "country#{n+1}"
+      League.create!(name:  name,
+      country: country,
+      created_at: Time.zone.now)
+    end
+  end
 end

@@ -52,26 +52,15 @@ en:
   error: "Error"
   success: "Success"
   edituser: "Edit user"
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> Manage Categories
   categories: "Categories"
   list_categories: "List Categories"
   create_categories: "Create categories"
   created_time: "Created Time"
   update_time: "Update Time"
   format_time: "%d-%m-%Y"
+  format_time_season: "%Y"
   category_name: "Category Name"
   edit_category: "Edit Category"
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-  
->>>>>>> Manage User
-=======
->>>>>>> Manage Categories
-=======
   list_news: "List News"
   create_new: "Create new"
   tilte_new: "Tilte new"
@@ -80,31 +69,25 @@ en:
   news_styles: "News Styles"
   image: "Image"
   edit_newspaper: "Edit Newspaper"
-<<<<<<< HEAD
->>>>>>> Manage News
-=======
   category: "Category"
   category_empty: "Category has not news"
   new_News: "Newspapers"
   related_news: "Related News"
-<<<<<<< HEAD
-  
->>>>>>> Category_view_home
-=======
   country: "Country"
   list_league: "List League"
   leagues: "Leagues"
   create_league: "Create League"
   league: "League"
-<<<<<<< HEAD
   edit_league: "Edit League"  
-  
->>>>>>> Manage Leagues
-=======
   edit_league: "Edit League"
   seasons: "Seasons"
   list_seasons: "List Seasons"
   create_season: "Create Season"
   start_time: "Start Time"
-  
->>>>>>> manage seasons
+  rounds: "Rounds"
+  list_rounds: "List Rounds"
+  season: "Season"
+  round_number: "Round Number"
+  create_round: "Create Round"
+  edit_round: "Edit Round"
+  round_number: "Round Number"

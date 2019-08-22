@@ -7,31 +7,16 @@ Rails.application.routes.draw do
   namespace :admin do
     get "index"
     resources :users
-<<<<<<< HEAD
-<<<<<<< HEAD
     resources :categories
     resources :newspapers
     resources :leagues
     resources :seasons
-  end
-<<<<<<< HEAD
-  get "categories/new"
-=======
-  end
->>>>>>> Manage User
-=======
-    resources :categories
+    resources :rounds
   end
   get "categories/new"
->>>>>>> Manage Categories
-=======
   mount Ckeditor::Engine => '/ckeditor'
-<<<<<<< HEAD
   get "/newspaper", to:"newspapers#show"
->>>>>>> Manage News
-=======
   get "/categories", to: "home#index"
   resources :categories
   resources :newspapers
->>>>>>> Category_view_home
 end
