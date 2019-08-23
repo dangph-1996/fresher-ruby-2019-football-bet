@@ -6,7 +6,7 @@
           <div class="top-header-content d-flex align-items-center justify-content-between">
             <div class="logo">
               <h1 class="title-logo">
-                <%= link_to t("tittle_website"), root_path %>
+                <%= link_to t("title_website"), root_path %>
               </h1>
             </div>
             <div class="login-search-area d-flex align-items-center">
@@ -17,13 +17,17 @@
                     <%= current_user.name %> <b class="caret"></b>
                   </a>
                   <ul class="dropdown-menu">
+                    <% if current_user.is_admin? %>
+                      <li>
+                      <%= link_to t("admin_manage") ,admin_index_path, class:"back-text" %>
+                    </li>
+                    <% end %>
                     <li>
                       <%= link_to t("edit_profile") ,edit_user_registration_path, class:"back-text" %>
                     </li>
                   </ul>
                 </li>
                 <%= link_to t("signout"), destroy_user_session_path, method: :delete %>
-                <%= link_to "Aaa", edit_user_password_path %>
               <% else %>
                 <%= link_to t(".signin"), new_user_session_path %>
                 <%= link_to t(".signup"), new_user_registration_path %>

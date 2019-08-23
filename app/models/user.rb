@@ -2,13 +2,16 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
     :recoverable, :rememberable, :validatable,
     :omniauthable, omniauth_providers: [:facebook, :google_oauth2]
+  USER_PARAMS = %i(name email password avatar).freeze
+
+  has_one_attached :avatar
 
   has_many :comments, dependent: :destroy
   mount_uploader :avatar, ImageUploader
 
   def self.new_with_session params, session
-    super.tap do |user|
-      if data = session[:devise.facebook_data] &&
+    tap do |user|
+      if data = session["devise.facebook_data"] &&
         session[:devise.facebook_data][:extra][:raw_info]
         user.email = data["email"] if user.email.blank?
       end
@@ -21,5 +24,9 @@ class User < ApplicationRecord
       user.password = Devise.friendly_token[0, 20]
       user.name = auth.info.name
     end
+  end
+
+  def current_user? user
+    self == user
   end
 end
