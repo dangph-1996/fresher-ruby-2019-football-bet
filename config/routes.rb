@@ -12,6 +12,7 @@ Rails.application.routes.draw do
     resources :leagues
     resources :seasons
     resources :rounds
+    resources :football_clubs
   end
   get "categories/new"
   mount Ckeditor::Engine => '/ckeditor'

@@ -5,6 +5,7 @@ class CreateFootballClubs < ActiveRecord::Migration[6.0]
       t.text :description
       t.integer :member
       t.string :stadium
+      t.string :logo
       
       t.timestamps
     end

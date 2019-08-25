@@ -37,10 +37,22 @@ namespace :seed_data do
 
   task leagues: :environment do
     5.times do |n|
-      name  = "League#{n+1}"
-      country  = "country#{n+1}"
-      League.create!(name:  name,
+      name = "League#{n+1}"
+      country = "country#{n+1}"
+      League.create!(name: name,
       country: country,
+      created_at: Time.zone.now)
+    end
+  end
+
+  task football_clubs: :environment do
+    20.times do |n|
+      name = "Foorball_club#{n+1}"
+      stadium = "Stadium#{n+1}"
+      FootballClub.create!(name: name,
+      description: "this is #{name}",
+      member: 25,
+      stadium: stadium,
       created_at: Time.zone.now)
     end
   end

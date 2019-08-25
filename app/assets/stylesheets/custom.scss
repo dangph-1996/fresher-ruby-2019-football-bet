@@ -2093,24 +2093,31 @@ iframe {
 .back-text {
   color: $black_color7 !important;
 }
-img.mw{
+
+img.mw {
   height: 50px;
   width: 50px
 }
+
 .classynav ul li a {
   line-height: 34px !important;
 }
-.classynav ul li.has-down > a::after, .classynav ul li.megamenu-item > a::after{
+
+.classynav ul li.has-down>a::after,
+.classynav ul li.megamenu-item>a::after {
   display: none
 }
+
 .post-thumb img {
   height: 300px;
   width: 100%;
   object-fit: cover
 }
+
 .post-title h6 {
   font-size: 20px !important
 }
+
 .blog-area.section-padding-0-80 {
   padding: 10px 0 0 0;
 }
@@ -2119,18 +2126,22 @@ img.mw{
   font-size: 20px !important
 }
 
- .blog-area.section-padding-0-80 {
+.blog-area.section-padding-0-80 {
   padding: 10px 0 0 0;
 }
 
- .newlq img {
+.newlq img {
   height: 100px;
 }
 
- .post-title.newlq h6 {
+.post-title.newlq h6 {
   font-size: 14px !important
 }
 
 a {
   text-decoration: none !important;
+}
+
+#wrapper #content-wrapper {
+  overflow: hidden !important;
 }

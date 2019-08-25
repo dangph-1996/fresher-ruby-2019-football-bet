@@ -65,6 +65,7 @@ ActiveRecord::Schema.define(version: 2019_08_19_074200) do
     t.text "description"
     t.integer "member"
     t.string "stadium"
+    t.string "logo"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -93,6 +94,7 @@ ActiveRecord::Schema.define(version: 2019_08_19_074200) do
   create_table "newspapers", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
     t.string "title"
     t.text "description"
+    t.text "content"
     t.string "image"
     t.integer "status"
     t.bigint "category_id"
