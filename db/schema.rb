@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_08_17_043214) do
+ActiveRecord::Schema.define(version: 2019_08_19_074200) do
 
   create_table "active_storage_attachments", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
     t.string "name", null: false
@@ -39,13 +39,24 @@ ActiveRecord::Schema.define(version: 2019_08_17_043214) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  create_table "ckeditor_assets", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
+    t.string "data_file_name", null: false
+    t.string "data_content_type"
+    t.integer "data_file_size"
+    t.string "data_fingerprint"
+    t.string "type", limit: 30
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["type"], name: "index_ckeditor_assets_on_type"
+  end
+
   create_table "comments", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
     t.text "content"
     t.bigint "user_id"
-    t.bigint "new_id"
+    t.bigint "newspaper_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["new_id"], name: "index_comments_on_new_id"
+    t.index ["newspaper_id"], name: "index_comments_on_newspaper_id"
     t.index ["user_id"], name: "index_comments_on_user_id"
   end
 
@@ -79,7 +90,7 @@ ActiveRecord::Schema.define(version: 2019_08_17_043214) do
     t.index ["round_id"], name: "index_matches_on_round_id"
   end
 
-  create_table "news", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
+  create_table "newspapers", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
     t.string "title"
     t.text "description"
     t.string "image"
@@ -87,7 +98,7 @@ ActiveRecord::Schema.define(version: 2019_08_17_043214) do
     t.bigint "category_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["category_id"], name: "index_news_on_category_id"
+    t.index ["category_id"], name: "index_newspapers_on_category_id"
   end
 
   create_table "players", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
@@ -151,7 +162,7 @@ ActiveRecord::Schema.define(version: 2019_08_17_043214) do
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
-  add_foreign_key "comments", "news", column: "new_id"
+  add_foreign_key "comments", "newspapers"
   add_foreign_key "comments", "users"
   add_foreign_key "matches", "rounds"
   add_foreign_key "news", "categories"
