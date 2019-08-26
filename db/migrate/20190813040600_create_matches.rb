@@ -1,8 +1,8 @@
 class CreateMatches < ActiveRecord::Migration[6.0]
   def change
     create_table :matches do |t|
-      t.integer :home_team
-      t.integer :guest_team
+      t.integer :home_team_id
+      t.integer :guest_team_id
       t.datetime :start_time
       t.datetime :finish_time
       t.integer :goals_home_team
