@@ -7,5 +7,7 @@ Rails.application.routes.draw do
   namespace :admin do
     get "index"
     resources :users
+    resources :categories
   end
+  get "categories/new"
 end
