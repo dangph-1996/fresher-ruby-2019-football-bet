@@ -64,4 +64,11 @@
       <label><%= t "footBall_clubs" %></label>
     <% end %>
   </li>
+
+  <li class="nav-item">
+    <%= link_to admin_players_path, class: "nav-link collapsed" do %>
+      <i class="fa fa-location-arrow"></i>
+      <label><%= t "player" %></label>
+    <% end %>
+  </li>
 </ul>

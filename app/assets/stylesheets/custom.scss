@@ -2134,3 +2134,12 @@ img.mw{
 a {
   text-decoration: none !important;
 }
+.select-time select {
+  height: 40px;
+  border-radius: 5%;
+  background: $while_color1;
+}
+
+#wrapper #content-wrapper {
+  overflow: hidden !important
+}

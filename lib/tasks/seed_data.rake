@@ -56,4 +56,22 @@ namespace :seed_data do
       created_at: Time.zone.now)
     end
   end
+
+  task players: :environment do
+    100.times do |n|
+      name = FFaker::Name.name
+      number = rand(1..99)
+      position = rand(1..10)
+      country = FFaker::Address.country
+      birthday = FFaker::Time.date
+      football_club_id = rand(6..10)
+      Player.create!(name: name,
+      number: number,
+      position: position,
+      country: country,
+      birthday: birthday,
+      football_club_id: football_club_id,
+      created_at: Time.zone.now)
+    end
+  end
 end
