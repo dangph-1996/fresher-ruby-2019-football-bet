@@ -1,7 +1,4 @@
 Rails.application.routes.draw do
-  namespace :admin do
-    get 'players/new'
-  end
   root "home#index"
   devise_for :users,
     controllers:{ omniauth_callbacks:"users/omniauth_callbacks" }
@@ -17,6 +14,7 @@ Rails.application.routes.draw do
     resources :rounds
     resources :football_clubs
     resources :players
+    resources :matchs
   end
   get "categories/new"
   mount Ckeditor::Engine => '/ckeditor'
