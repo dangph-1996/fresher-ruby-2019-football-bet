@@ -11,7 +11,7 @@ class Admin::SeasonsController < AdminController
 
   def create
     @season = Season.new season_params
-    
+
     if @season.save
       flash[:success] = t("success")
       redirect_to admin_seasons_path
@@ -50,7 +50,7 @@ class Admin::SeasonsController < AdminController
 
   def load_season
     @season = Season.find_by id: params[:id]
-    
+
     return if @season
     flash[:danger] = t "error"
     redirect_to root_path

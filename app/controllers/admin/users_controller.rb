@@ -11,7 +11,7 @@ class Admin::UsersController < AdminController
 
   def create
     @user = User.new user_params
-    
+
     if @user.save
       flash[:success] = t "success"
       redirect_to admin_users_path
@@ -48,7 +48,7 @@ class Admin::UsersController < AdminController
 
   def find_user
     @user = User.find_by id: params[:id]
-    
+
     return if @user
     flash[:danger] = t "error"
     redirect_to admin_index_path

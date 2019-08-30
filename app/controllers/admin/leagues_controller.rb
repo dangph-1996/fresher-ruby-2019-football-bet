@@ -50,7 +50,7 @@ class Admin::LeaguesController < AdminController
 
   def load_league
     @league = League.find_by id: params[:id]
-    
+
     return if @league
     flash[:danger] = t "error"
     redirect_to root_path
