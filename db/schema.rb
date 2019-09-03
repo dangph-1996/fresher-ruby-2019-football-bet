@@ -78,8 +78,8 @@ ActiveRecord::Schema.define(version: 2019_08_19_074200) do
   end
 
   create_table "matches", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
-    t.integer "home_team"
-    t.integer "guest_team"
+    t.integer "home_team_id"
+    t.integer "guest_team_id"
     t.datetime "start_time"
     t.datetime "finish_time"
     t.integer "goals_home_team"

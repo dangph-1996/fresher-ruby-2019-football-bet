@@ -43,7 +43,7 @@ class Admin::FootballClubsController < AdminController
   end
 
   private
-  
+
   def football_club_param
     params.require(:football_club).permit FootballClub::FOOTBALL_CLUB_PARAMS
   end
