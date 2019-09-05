@@ -10,3 +10,4 @@ start_char: 0
 end_char: 150
 show_newspaper_home: 4
 space: "-"
+paging_table_comment: 5

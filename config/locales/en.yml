@@ -114,3 +114,6 @@ en:
   create_match: "Create match"
   search_news: "search_news"
   result_for: "Result for:"
+  comment_newspapers: "Your commemnt"
+  sign_in_to_comment: "Please signin to comment"
+  no_comment: "No Comment"

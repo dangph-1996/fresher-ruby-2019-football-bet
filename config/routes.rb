@@ -23,4 +23,5 @@ Rails.application.routes.draw do
   get "/search", to:"newspapers#search"
   resources :categories
   resources :newspapers
+  resources :comments
 end

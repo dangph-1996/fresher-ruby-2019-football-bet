@@ -26,6 +26,7 @@ gem "font-awesome-rails"
 gem "ffaker"
 gem "ckeditor", "4.1.3"
 gem "ransack"
+gem "i18n-js"
 
 group :development, :test do
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
