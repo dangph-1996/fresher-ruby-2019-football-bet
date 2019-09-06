@@ -2205,3 +2205,17 @@ a {
 // .green{
 //   color: $green_color;
 // }
+.content_cm p {
+  padding-bottom: 0px !important;
+  margin-bottom: 0px;
+}
+
+.action_cm {
+  position: absolute;
+  right: 18px;
+}
+
+.btn-submit-comment{
+  padding-bottom: 20px;
+  text-align: right
+}
