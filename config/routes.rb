@@ -24,5 +24,6 @@ Rails.application.routes.draw do
   resources :categories
   resources :newspapers
   resources :comments
-  resources :matchs  
+  resources :matchs
+  resources :bets  
 end

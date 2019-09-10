@@ -15,10 +15,10 @@
     <%= f.date_select :finish_time %>
   </div>
 
-  <% FootballClub.all.each do |football_club| %>
-    <%= f.check_box :football_clubs, {multiple: true}, football_club.id, false %>
-    <%= f.label football_club.name %><br>
-    <% end %>
+  <div class="form-group col-sm-6">
+    <%= f.label :add_football_clubs %><br>
+    <%= select_tag :football_clubs, options_from_collection_for_select(FootballClub.all, "id", "name" ) , include_blank: t("football_club"), id: "template-example", class:"js-states form-control", multiple: true %>
+  </div>
 
   <%= button_tag t("submit"), type: "submit", class: "btn btn-primary" %>
   <%= button_tag t("reset"), type: "reset", class: "btn btn-default" %>
