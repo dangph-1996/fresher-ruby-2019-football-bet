@@ -4,3 +4,10 @@ omniauth:
 start_stt: 1
 end_stt: 10
 paging_table: 10
+paging_table_new: 5
+start_char: 0
+end_char: 150
+space: "-"
+paging_table_comment: 5
+defaut_number_gold: 0
+paging_table_bet: 5

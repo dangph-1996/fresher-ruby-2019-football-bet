@@ -7,9 +7,10 @@ class User < ApplicationRecord
   has_one_attached :avatar
 
   has_many :comments, dependent: :destroy
+  has_many :bets, dependent: :destroy
   mount_uploader :avatar, ImageUploader
 
-  def self.new_with_session params, session
+  def new_with_session params, session
     tap do |user|
       if data = session["devise.facebook_data"] &&
         session[:devise.facebook_data][:extra][:raw_info]
@@ -18,11 +19,25 @@ class User < ApplicationRecord
     end
   end
 
-  def self.from_omniauth auth
-    where(provider: auth.provider, uid: auth.uid).first_or_create do |user|
-      user.email = auth.info.email
-      user.password = Devise.friendly_token[0, 20]
-      user.name = auth.info.name
+  class << self
+    def from_omniauth auth      
+      where(provider: auth.provider, uid: auth.uid).first_or_create do |user|
+        user.email = auth.info.email
+        user.password = Devise.friendly_token[0, 20]
+        user.name = auth.info.name
+      end
+    end
+  end
+
+  def current_user? user
+    self == user
+  end
+
+  private
+
+  def add_default_avatar
+    unless avatar.attached?
+      self.avatar.attach(io: File.open(Rails.root.join("app", "assets", "images", "default.png")), filename: "default.png" , content_type: "image/png")
     end
   end
 

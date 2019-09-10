@@ -10,7 +10,7 @@ gem "turbolinks", "~> 5"
 gem "jbuilder", "~> 2.7"
 gem "bootsnap", ">= 1.4.2", require: false
 gem "rails-i18n"
-gem "devise"
+gem "devise", git: "https://github.com/plataformatec/devise.git", branch: "master"
 gem "omniauth"
 gem "omniauth-google-oauth2"
 gem "omniauth-facebook"
@@ -21,9 +21,12 @@ gem "carrierwave"
 gem "figaro"
 gem "config"
 gem "kaminari"
-gem "bootstrap-kaminari-views"
+gem "bootstrap4-kaminari-views"
 gem "font-awesome-rails"
-gem "faker"
+gem "ffaker"
+gem "ckeditor", "4.1.3"
+gem "bootstrap-datepicker-rails", ">= 0.6.21"
+gem "ransack"
 
 group :development, :test do
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]

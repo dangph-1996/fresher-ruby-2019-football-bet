@@ -1,4 +1,9 @@
 class Comment < ApplicationRecord
+  COMMENT_PARAMS = %i(content user_id newspaper_id).freeze
   belongs_to :user
-  belongs_to :new
+  belongs_to :newspaper
+
+  validates :content, presence: true
+
+  scope :order_comment_by_id, -> {order id: :desc}
 end
