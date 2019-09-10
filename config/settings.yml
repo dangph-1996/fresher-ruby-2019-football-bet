@@ -12,3 +12,4 @@ show_newspaper_home: 4
 space: "-"
 paging_table_comment: 5
 defaut_number_gold: 0
+limit_news_category_home: 4

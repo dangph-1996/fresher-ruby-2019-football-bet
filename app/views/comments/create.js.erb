@@ -2,5 +2,5 @@
   alert('<%= t "error" %>');
 <% else %>
   $('#add_comment').prepend('<%= j render "create", comment: @comment %>');
-  $('#content_comment').val('');
+  $('#comment_content').val('');
 <% end %>

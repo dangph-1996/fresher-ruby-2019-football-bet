@@ -47,7 +47,42 @@
             </div>
           </div>
         <% end %>
-      </div>      
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="editors-pick-post-area section-padding-80-50">
+  <div class="container">
+    <div class="row">
+      <% @categories_show.each do |category_show| %>
+        <div class="col-12 col-md-12 col-lg-12">
+          <div class="section-heading">
+            <h6><%= category_show.name %></h6>
+          </div>
+          <div class="row">
+            <% get_newspaper_home_page(category_show).each do |newspaper_show| %>
+            <div class="col-12 col-lg-3">
+              <div class="single-blog-post news-category">
+                <div class="post-thumb-category">
+                  <%= link_to newspaper_path(newspaper_show) do %>
+                    <%= image_tag "#{newspaper_show.image}" , alt: "avatar" %>
+                  <% end %>
+                </div>
+                <div class="post-data">
+                    <%= link_to newspaper_path(newspaper_show) do %>
+                      <h6><%= newspaper_show.title %></h6>
+                    <% end %>
+                    <div class="post-meta">
+                      <div class="post-date"><%= link_to newspaper_show.created_at.strftime(t("format_time")) , newspaper_path(newspaper_show) %></div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <% end %>
+          </div>
+        </div>
+      <% end %>
     </div>
   </div>
 </div>
