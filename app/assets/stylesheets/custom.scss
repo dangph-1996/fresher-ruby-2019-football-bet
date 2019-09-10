@@ -984,7 +984,7 @@ textarea:focus {
 }
 
 .single-blog-post.small-featured-post .post-data .post-title h6 {
-  font-size: 14px;
+  font-size: 14px !important;
   line-height: 1.6;
   margin-bottom: 10px;
   font-weight: 700;
@@ -2092,4 +2092,166 @@ iframe {
 
 .back-text {
   color: $black_color7 !important;
+}
+
+img.mw {
+  height: 50px;
+  width: 50px
+}
+
+.classynav ul li a {
+  line-height: 34px !important;
+}
+
+.classynav ul li.has-down>a::after,
+.classynav ul li.megamenu-item>a::after {
+  display: none
+}
+
+.post-thumb img {
+  height: 300px;
+  width: 100%;
+  object-fit: cover
+}
+
+.post-title h6 {
+  font-size: 20px !important
+}
+
+.blog-area.section-padding-0-80 {
+  padding: 10px 0 0 0;
+}
+
+.post-title h6 {
+  font-size: 20px !important
+}
+
+.blog-area.section-padding-0-80 {
+  padding: 10px 0 0 0;
+}
+
+.newlq img {
+  height: 100px;
+}
+
+.post-title.newlq h6 {
+  font-size: 14px !important
+}
+
+a {
+  text-decoration: none !important;
+}
+
+#wrapper #content-wrapper {
+  overflow: hidden !important;
+}
+
+.news_normal img {
+  height: auto;
+  max-width: 100px;
+}
+
+.cm_nspp {
+  padding: 5px;
+  border-bottom: 1px solid #e4e6e8;
+  display: -webkit-box;
+}
+
+.cm_nspp img.mw {
+  margin-right: 10px;
+}
+
+.text_aria_comment textarea {
+  height: 80px;
+}
+
+.title_newspaper {
+  width: 100%;
+  padding-top: 10px
+}
+
+.select_fixtures {
+  width: 100%;
+}
+
+.pixtures {
+  height: 50px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.hero-area.view_list_fixture {
+  height: inherit;
+}
+
+#match-list table, .match-bet table {
+  color: $black_color7
+}
+
+#match-list table tbody th, .match-bet table th {
+  font-weight: inherit;
+}
+
+// .red{
+//   color: $red_color1;
+// }
+// .green{
+//   color: $green_color;
+// }
+.content_cm p {
+  padding-bottom: 0px !important;
+  margin-bottom: 0px;
+}
+
+.action_cm {
+  position: absolute;
+  right: 18px;
+}
+
+.btn-submit-comment {
+  padding-bottom: 20px;
+  text-align: right
+}
+
+.post-title h6 {
+  font-size: 17px !important;
+  color: $black_color7;
+}
+
+.post-thumb-category img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover
+}
+
+.news-category h6 {
+  color: #000;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.news-category .post-date a {
+  color: $black_color5;
+}
+
+.hero-area.match-bet table th{
+  border: none;
+}
+
+.hero-area.match-bet table{
+  border: 3px solid $gray_color5;
+}
+
+.tittle_bet{
+  width: 100%;
+  padding-bottom: 10px
+}
+
+.form_bet form{
+  display: flex;
+}
+
+.title-bet-home-team{
+  padding-bottom: 10px
 }

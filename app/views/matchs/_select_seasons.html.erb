@@ -1,0 +1,2 @@
+<%= select_tag "season", options_for_select(@seasons.collect{|s| [s.start_time.strftime(t("format_time_season")), s.id]} ,selected: params[:season]),{include_blank: "Chose season", id: "select_season", class:"pixtures"} %>
+		

@@ -23,6 +23,9 @@
                     </li>
                     <% end %>
                     <li>
+                    <%= link_to t("profile") , user_path(current_user), class:"back-text" %>
+                    </li>
+                    <li>
                       <%= link_to t("edit_profile") ,edit_user_registration_path, class:"back-text" %>
                     </li>
                   </ul>
@@ -33,11 +36,11 @@
                 <%= link_to t(".signup"), new_user_registration_path %>
               <% end %>
               </div>
-              <div class="search-form">
-                <form action="#" method="#">
-                  <input type="search" name="search" class="form-control" placeholder="<%= t"search" %>">
-                  <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
-                </form>
+              <div class="search-form">            
+                <%= form_for :q, url: search_path, method: :get, html: {class: "form-inline my-2 my-lg-0"} do |f| %>
+                  <%= f.search_field :title_or_description_cont, class: "form-control mr-sm-2", placeholder: " #{t "search_news"}" %>
+                  <button class="fa fa-search" type="submit"></button>
+                <% end %>
               </div>
             </div>
           </div>
@@ -59,9 +62,19 @@
             <div class="classynav">
               <ul>
                 <li class="active">
-                  <a href="#">
-                  <%= t"home" %>
-                  </a>
+                <%= link_to t("home"), root_path %> 
+                </li>
+                <li class="cn-dropdown-item has-down"><a href="#"><%= t "category_newspaper" %></a>
+                    <ul class="dropdown">
+                      <% @categories.each do |category| %>
+                        <li>
+                          <%= link_to category.name, category_path(id: category.id) %>
+                        </li>
+                      <% end %>                        
+                    </ul>
+                </li>
+                <li>
+                <%= link_to t("fixtures"), matchs_path %> 
                 </li>
               </ul>
             </div>

@@ -1,8 +1,8 @@
 class CreateRankings < ActiveRecord::Migration[6.0]
   def change
     create_table :rankings do |t|
-      t.references :seasons, foreign_key: true
-      t.references :football_clubs, foreign_key: true
+      t.references :season, foreign_key: true
+      t.references :football_club, foreign_key: true
       t.integer :goals_number
       t.integer :goals_lost_number
       t.integer :games_win
