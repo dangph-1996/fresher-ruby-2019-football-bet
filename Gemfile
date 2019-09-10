@@ -27,6 +27,7 @@ gem "ffaker"
 gem "ckeditor", "4.1.3"
 gem "bootstrap-datepicker-rails", ">= 0.6.21"
 gem "ransack"
+gem "select2-rails"
 
 group :development, :test do
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]

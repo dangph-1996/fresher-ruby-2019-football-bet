@@ -11,7 +11,7 @@ class Admin::SeasonsController < AdminController
 
   def create
     @season = Season.new season_params
-    params[:season][:football_clubs].each do |football_club_id|
+    params[:football_clubs].each do |football_club_id|
       @season.rankings.build(football_club_id: football_club_id, goals_number: 0, goals_lost_number:0,
       games_win: 0, games_lost: 0, games_draw: 0)
     end
