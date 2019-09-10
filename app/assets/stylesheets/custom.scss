@@ -2239,3 +2239,24 @@ a {
 .news-category .post-date a {
   color: $black_color5;
 }
+
+.hero-area.match-bet table th{
+  border: none;
+}
+
+.hero-area.match-bet table{
+  border: 3px solid $gray_color5;
+}
+
+.tittle_bet{
+  width: 100%;
+  padding-bottom: 10px
+}
+
+.form_bet form{
+  display: flex;
+}
+
+.title-bet-home-team{
+  padding-bottom: 10px
+}

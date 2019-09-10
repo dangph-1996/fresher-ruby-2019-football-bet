@@ -19,12 +19,12 @@
   </div>
 
   <div class="form-group col-sm-6">
-    <%= f.text_field :goals_home_team, autocomplete: "goalshometeam",
+  <%= f.text_field :goals_home_team, autocomplete: "goalshometeam", value: Settings.defaut_number_gold,
       class: "form-control form-control-user", placeholder: t("goals_home_team") %>
   </div>
 
   <div class="form-group col-sm-6">
-    <%= f.text_field :goals_guest_team, autocomplete: "goals_guest_team",
+    <%= f.text_field :goals_guest_team, autocomplete: "goals_guest_team", value: Settings.defaut_number_gold,
       class: "form-control form-control-user", placeholder: t("goals_guest_team") %>
   </div>
 

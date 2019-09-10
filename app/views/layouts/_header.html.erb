@@ -23,6 +23,9 @@
                     </li>
                     <% end %>
                     <li>
+                    <%= link_to t("profile") , user_path(current_user), class:"back-text" %>
+                    </li>
+                    <li>
                       <%= link_to t("edit_profile") ,edit_user_registration_path, class:"back-text" %>
                     </li>
                   </ul>
