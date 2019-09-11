@@ -1,4 +1,5 @@
 class User < ApplicationRecord
+  after_create_commit :set_defautl_score
   devise :database_authenticatable, :registerable,
     :recoverable, :rememberable, :validatable,
     :omniauthable, omniauth_providers: [:facebook, :google_oauth2]
@@ -9,6 +10,7 @@ class User < ApplicationRecord
   has_many :comments, dependent: :destroy
   has_many :bets, dependent: :destroy
   mount_uploader :avatar, ImageUploader
+
 
   def new_with_session params, session
     tap do |user|
@@ -31,5 +33,9 @@ class User < ApplicationRecord
 
   def current_user? user
     self == user
+  end
+
+  def set_defautl_score
+    self.update_attributes score: 1000
   end
 end
