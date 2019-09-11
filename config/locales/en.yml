@@ -1,12 +1,12 @@
 en:
   title_website: "Football Bet"
-  signin: "Signin"
-  signup: "Signup"
+  signin: "Sign-in"
+  signup: "Sign-up"
   submit: "Submit"
   search: "Search"
   home: "Home"
   footer_text: "@Football Bet"
-  signout: "Signout"
+  signout: "Sign-out"
   email: Email
   password: "Password"
   login: "Login"

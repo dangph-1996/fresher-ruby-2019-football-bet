@@ -32,16 +32,4 @@ class User < ApplicationRecord
   def current_user? user
     self == user
   end
-
-  private
-
-  def add_default_avatar
-    unless avatar.attached?
-      self.avatar.attach(io: File.open(Rails.root.join("app", "assets", "images", "default.png")), filename: "default.png" , content_type: "image/png")
-    end
-  end
-
-  def current_user? user
-    self == user
-  end
 end

@@ -15,7 +15,7 @@
                 </div>
                 <div class="post-data">
                   <%= link_to newspaper_path(newspaper) do %>
-                     <h4><%= newspaper.title %></h4>
+                     <h6><%= newspaper.title %></h6>
                   <% end %>
                   <p><%= raw( newspaper.description.slice(Settings.start_char..Settings.end_char)) %></p>
                 </div>
